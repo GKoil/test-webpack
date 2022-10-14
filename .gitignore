@@ -5,3 +5,4 @@ package-lock.json
 .stylelintcache
 .vscode
 coverage
+build
