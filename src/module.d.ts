@@ -2,7 +2,7 @@
  * Asset definitions.
  */
 declare module '*.scss';
-declare module '*.json';
+declare module '*.css';
 
 /**
  * 3rd-party packages definitions

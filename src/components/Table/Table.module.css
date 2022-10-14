@@ -1,0 +1,32 @@
+.table {
+  min-width: 100vw;
+  width: auto;
+  flex: 1;
+  display: grid;
+  border-collapse: collapse;
+  grid-template-columns: repeat(10, minmax(150px, 1fr));
+}
+
+.table
+thead,
+tbody,
+tr {
+  display: contents;
+}
+
+.table
+th,
+td {
+  padding: 6px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.table th {
+  background: var(--table-head);
+}
+
+.table tr:nth-child(even) td {
+  background: var(--table-body-item);
+}

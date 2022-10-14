@@ -1,0 +1,19 @@
+.cell {
+  text-align: left;
+  color: var(--main-white);
+}
+
+.cell .button {
+  display: none;
+}
+
+.cell:hover .button {
+  display: inline-block;
+}
+
+.button {
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+}

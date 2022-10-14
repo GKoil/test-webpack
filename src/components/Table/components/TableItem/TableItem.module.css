@@ -1,0 +1,28 @@
+.text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  padding: 10px 5px;
+}
+
+.formWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  height: 100%;
+}
+
+.formInput {
+  width: 100%;
+  display: block;
+  border: none;
+  padding: 0;
+  border-bottom: 1px solid black;
+  font-size: inherit;
+  height: 100%;
+  background: inherit;
+}
