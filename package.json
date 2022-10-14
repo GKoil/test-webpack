@@ -1,5 +1,6 @@
 {
   "private": true,
+  "homepage": "https://gkoil.github.io/test-webpack/",
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --config config/webpack.config.dev.babel.js",
