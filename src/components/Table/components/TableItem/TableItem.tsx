@@ -40,7 +40,7 @@ const TableCell = React.memo(({ value, id }: TableCellType) => {
   };
 
   return isEdit ? (
-    <td className={styles.formWrapper}>
+    <td className={styles.cellForm}>
       <form
         className={styles.form}
         onSubmit={e => handleSubmit(e, id, valueCell)}
@@ -48,7 +48,7 @@ const TableCell = React.memo(({ value, id }: TableCellType) => {
       >
         <input
           className={styles.formInput}
-          placeholder='data'
+          placeholder='Enter text'
           onChange={e => handleOnChange(e)}
           type='text'
           value={valueCell}
@@ -56,7 +56,7 @@ const TableCell = React.memo(({ value, id }: TableCellType) => {
       </form>
     </td>
   ) : (
-    <td onClick={e => handleEdit(e)}>
+    <td className={styles.cell} onClick={e => handleEdit(e)}>
       <span className={styles.text}>{valueCell}</span>
     </td>
   );

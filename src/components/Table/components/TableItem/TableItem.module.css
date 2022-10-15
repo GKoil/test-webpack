@@ -1,15 +1,26 @@
+.cell {
+}
+
+.cell:hover {
+  outline: 1px solid var(--table-outline);
+  z-index: 1;
+}
+
 .text {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   display: block;
   padding: 10px 5px;
+  cursor: default;
 }
 
-.formWrapper {
+.cellForm {
   display: flex;
   align-items: center;
   justify-content: center;
+  outline: 1px solid var(--main-black);
+  z-index: 1;
 }
 
 .form {
@@ -21,8 +32,8 @@
   display: block;
   border: none;
   padding: 0;
-  border-bottom: 1px solid black;
   font-size: inherit;
   height: 100%;
   background: inherit;
+  outline: none;
 }
